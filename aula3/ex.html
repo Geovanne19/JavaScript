@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: gray;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section {
+            background-color: white;
+            height: 350px;
+            width: 450px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Formulário</h1>
+        <form action="" method="get" class="form">
+            <p>Nome: <input type="text" id="nome"></p>
+            <p>Sobrenome: <input type="text" id="sobrenome"></p>
+            <p>Peso: <input type="number" id="peso"></p>
+            <p>Altura: <input type="number" id="altura"></p>
+            <button>Enviar</button>
+        </form>
+        <div class="resultado"></div>
+    </section>
+
+    <script>
+        function meuEscopo() {
+            const form = document.querySelector('.form');
+            const resultado = document.querySelector('.resultado');
+            const pessoas = [];
+
+            function recebeEventoForm(evento) {
+                evento.preventDefault();
+                const nome = document.querySelector('#nome').value;
+                const sobrenome = document.querySelector('#sobrenome').value;
+                const peso = document.querySelector('#peso').value;
+                const altura = document.querySelector('#altura').value;
+
+                pessoas.push({
+                    nome: nome,
+                    sobrenome: sobrenome,
+                    peso: peso,
+                    altura: altura
+                });
+
+                // Limpar o conteúdo anterior
+                resultado.innerHTML = '';
+
+                // Adicionar novos elementos ao resultado
+                pessoas.forEach(function (pessoa) {
+                    const paragrafo = document.createElement('p');
+                    paragrafo.textContent = `${pessoa.nome} ${pessoa.sobrenome} ${pessoa.peso} ${pessoa.altura}`;
+                    resultado.appendChild(paragrafo);
+                });
+            }
+            form.addEventListener('submit', recebeEventoForm);
+        }
+        meuEscopo();
+    </script>
+</body>
+
+</html>
