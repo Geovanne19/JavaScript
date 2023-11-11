@@ -1,0 +1,104 @@
+2
+Ir ao mercado
+Comprar: Tomate, mamão e temperos
+compras
+3
+11
+8
+2023
+2
+Ir para a faculdade
+Das 14:00 ás 15:40
+AED
+3
+11
+8
+2023
+2
+Reunião de Trabalho
+Sobre as tabelas do banco de dados
+trabalho
+1
+11
+8
+2023
+2
+Prova de Geometria
+Espaço
+prova
+2
+18
+8
+2023
+2
+Ir para a academia
+Treino de costas+bíceps
+treino
+1
+11
+8
+2023
+2
+Tarefa de Cálculo1
+Página 113 1-6
+Cálculo
+3
+11
+8
+2023
+2
+Trabalho de AED
+Apresentação
+AED
+1
+11
+8
+2023
+2
+Lista de exercícios 4
+O anexo está no SIGAA
+AED
+2
+11
+8
+2023
+2
+Jogar Futebol
+Quadra a definir
+esporte
+3
+11
+8
+2023
+2
+Ir ao mercado
+Comprar: Tomate, mamão e temperos
+compras
+3
+11
+8
+2023
+2
+Ir para a faculdade
+Das 14:00 ás 15:40
+estudo
+4
+11
+9
+2023
+2
+Prova de Física
+- Conteúdo: Capitulo 11
+prova
+2
+20
+8
+2023
+2
+Estudar Front End
+html e css
+programaçao
+3
+11
+8
+2023
