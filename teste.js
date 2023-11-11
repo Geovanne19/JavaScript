@@ -1,19 +1,22 @@
-//diferenças entre var, let, const
+class Pessoa {
+    constructor(nome, sobrenome) {
+        this.nome = nome
+        this.sobrenome = sobrenome
+    }
 
-var nome1 = 'Geovanne'
-// let nome2 = 'Rodrigues'
+    falar(p) {
+        console.log(`Estou falando ${p}`)
+    }
 
-var nome1 = 'Nycolle'//var permite a redeclaração, onde o valor será sobrescrito
-// let nome2 = 'Araujo'//let não permite redeclaração
+    comer(p) {
+        console.log(`Estou comendo ${p}`)
+    }
 
-console.log(nome1)
-
-const verdadeira = true
-
-let nome = 'Luiz'//let tem escopo de bloco --> { ... bloco}
-var nome2 = 'Luiz'//var tem escopo de função
-
-if(verdadeira) {
-    let nome = 'Otávio'//apesar de ter o mesmo nome, não é a mesma variável, pois ela está dentro de um ooutro bloco
-    console.log('OK')
+    beber(p) {
+        console.log(`Estou bebendo ${p}`)
+    }
 }
+
+const p1 = new Pessoa('Luiz', 'Miranda')
+console.log(p1.nome, p1.sobrenome)
+p1.beber('pinga')
